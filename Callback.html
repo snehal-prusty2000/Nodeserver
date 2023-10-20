@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Script Loading</title>
+</head>
+<body>
+
+<!-- Your HTML content -->
+
+<script>
+    // Creating a script element
+    var scriptElement = document.createElement("script");
+
+    // Setting the full path for the JavaScript file
+    scriptElement.src = "https://example.com/path/to/your/script.js";
+
+    // Now, append the script element to the head of the document
+   // document.head.appendChild(scriptElement);
+   var head = document.createElement('h1');
+    head.textContent = 'Hello';
+    head.setAttribute("class", "dynamic-heading");//<h1 class="dynamic-heading">Hello</h1>
+    document.body.append(head);
+</script>
+
+</body>
+</html>
